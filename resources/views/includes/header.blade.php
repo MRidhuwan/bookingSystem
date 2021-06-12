@@ -16,7 +16,7 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('detail', $items)}}">Booking</a>
+                        <a class="nav-link" href="{{ route('detail', $item->slug)}}">Booking</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Service</a>

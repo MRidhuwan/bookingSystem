@@ -101,7 +101,7 @@ class GalleryController extends Controller
     public function update(GalleryRequest $request, $id)
     {
         $data = $request->all();
-        
+
         $data['image'] = $request->file('image')->store('assets\images\gallery', 'public');
 
         $item = Gallery::findOrfail($id);

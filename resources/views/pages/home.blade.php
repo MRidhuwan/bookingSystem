@@ -53,51 +53,17 @@
                 @foreach ($items as $item)
                 <div class="col-md-4 services">
                     <a href="{{ route('detail', $item->slug)}}">
-                        <img src="{{$item->galleries->count() ? Storage::url($item->galleries->first()->image) : ''}}"
-                            class="service-img">
+                        <img src="{{$item->galleries->count() ? 
+                        Storage::url($item->galleries->first()->image) : ''}}" class="service-img">
 
                         <h4>{{$item->title}} </h4>
                     </a>
                     <p>{{$item->about}}</p>
                 </div>
                 @endforeach
-                {{-- <div class="col-md-4 services">
-                    <img src="#" class="service-img">
-                    <h4>Hunting</h4>
-                    <p>Subscribe Easy tutorials YouTube Channel to watch more videos on wesite development, Digital
-                        Marketing, WordPress and graphics Designing.</p>
-                </div>
-                <div class="col-md-4 services">
-                    <img src="{{$item->galleries->count() ? Storage::url($item->galleries->first()->image) : ''}}"
-                class="service-img">
-                <h4>Photo Booth</h4>
-                <p>Subscribe Easy tutorials YouTube Channel to watch more videos on wesite development, Digital
-                    Marketing, WordPress and graphics Designing.</p>
+
             </div>
-            <div class="col-md-4 services">
-                <img src="{{$item->galleries->count() ? Storage::url($item->galleries->first()->image) : ''}}"
-                    class="service-img">
-                <h4>My Family</h4>
-                <p>Subscribe Easy tutorials YouTube Channel to watch more videos on wesite development, Digital
-                    Marketing, WordPress and graphics Designing.</p>
-            </div>
-            <div class="col-md-4 services">
-                <img src="{{$item->galleries->count() ? Storage::url($item->galleries->first()->image) : ''}}"
-                    class="service-img">
-                <h4>personal</h4>
-                <p>Subscribe Easy tutorials YouTube Channel to watch more videos on wesite development, Digital
-                    Marketing, WordPress and graphics Designing.</p>
-            </div>
-            <div class="col-md-4 services">
-                <img src="
-                    {{$item->galleries->count() ? Storage::url($item->galleries->first()->image) : ''}}"
-                    class="service-img">
-                <h4>Have Fun</h4>
-                <p>Subscribe Easy tutorials YouTube Channel to watch more videos on wesite development, Digital
-                    Marketing, WordPress and graphics Designing.</p>
-            </div> --}}
-        </div>
-        <button type="button" class="btn button primary-button">All Services</button>
+            <button type="button" class="btn button primary-button">All Services</button>
         </div>
     </section>
     <!--  ========================= About Area ==========================  -->
@@ -121,7 +87,7 @@
                             kita akan merasakan bahagia dengan mengingat moment yang indah.
                         </p>
                         <p class="para">
-                            untuk itu ada baik nya kita memilih menggunakan jasa photo studio, dimana hasil jepret nya 
+                            untuk itu ada baik nya kita memilih menggunakan jasa photo studio, dimana hasil jepret nya
                             sudah profesional, dan dapat memuaskan customer.
                             bagi anda yang berminat silahkan datang di <strong>CREATIVESTUDIO</strong>.
                         </p>
